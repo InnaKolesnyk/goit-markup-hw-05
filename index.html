@@ -54,9 +54,10 @@
         <section class="hero">
             <div class="container">
                 <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-btn" type="button">Заказать услугу </button>
+                <button data-modal-open class="hero-btn" type="button">Заказать услугу </button>
             </div>
         </section>
+
         <!--особенности-->
         <section class="features section">
             <div class="container">
@@ -106,11 +107,29 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="services-list list">
                     <li class="services-item"><img class="services-img" src="./imagas/programer.jpg"
-                            alt="програмист работающий за столом" width="370"></li>
+                            alt="програмист работающий за столом" width="370">
+                        <div class="services-overley">
+                            <p class="services-text-overley">
+                                Десктопные приложения
+                            </p>
+                        </div>
+                    </li>
                     <li class="services-item"><img class="services-img" src="./imagas/interface.jpg"
-                            alt="разработка мобильного интерфейса" width="370"></li>
+                            alt="разработка мобильного интерфейса" width="370">
+                        <div class="services-overley">
+                            <p class="services-text-overley">
+                                Мобильные приложения
+                            </p>
+                        </div>
+                    </li>
                     <li class="services-item"><img class="services-img" src="./imagas/desing.jpg" alt="веб дизайн"
-                            width="370"></li>
+                            width="370">
+                        <div class="services-overley">
+                            <p class="services-text-overley">
+                                Дизайнерские решения
+                            </p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -358,7 +377,16 @@
 
         </div>
     </footer>
+    <!--Модальное окно-->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="modal-btn"> <svg class="modal-btn-icon" width="11px" height="11px">
+                    <use href="./imagas/icons.svg#icon-close"></use>
+                </svg> </button>
+        </div>
+    </div>
 
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
